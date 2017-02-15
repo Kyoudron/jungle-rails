@@ -1,5 +1,4 @@
 class Admin::ProductsController < ApplicationController
-
   def index
     @products = Product.order(id: :desc).all
   end
@@ -10,7 +9,6 @@ class Admin::ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
-
     if @product.save
       redirect_to [:admin, :products], notice: 'Product created!'
     else
@@ -36,5 +34,4 @@ class Admin::ProductsController < ApplicationController
       :price
     )
   end
-
 end
