@@ -1,21 +1,20 @@
-<% product = line_item.product %>
+<% @order.line_items.each  do |t| %>
 
-<tr>
-  <td>
-    <%= image_tag product.image.tiny %>
-  </td>
-  <td>
-    <h4><%= product.name %></h4>
+<div class="col-sm-12">
+  <dl class="dl-horizontal">
+      <dd><%= image_tag t.product.image.tiny %></dd>
     <br>
-    <%= product.description %>
-  </td>
-  <td>
-  <%= product.price %>
-  </td>
-  <td>
-    <%= line_item.quantity %>
-  </td>
-  <td>
-    <%= line_item.quantity * product.price %>
-  </td>
-</tr>
+    <dt>Name: </dt>
+      <dd><%= t.product.name %></dd>
+    <br>
+    <dt>Description: </dt>
+      <dd><%= t.product.description %></dd>
+    <br>
+    <dt>Quantity: </dt>
+      <dd><%= t.quantity %></dd>
+    <br>
+    <dt>Price: </dt>
+      <dd>$<%= t.item_price %></dd>
+  </dl>
+</div>
+<% end %>
