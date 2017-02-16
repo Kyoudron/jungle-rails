@@ -1,6 +1,5 @@
   Rails.application.routes.draw do
 
-
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
@@ -18,8 +17,6 @@
     resources :products, except: [:edit, :update, :show]
     resources :categories, except: [:edit, :update, :show]
   end
-
-
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
