@@ -5,6 +5,7 @@
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
+  resources :charges
 
   resource :cart, only: [:show] do
     put    :add_item
@@ -15,11 +16,9 @@
 
   namespace :admin do
     root to: 'dashboard#show'
-    resources :products, except: [:edit, :update, :show]
     resources :categories, except: [:edit, :update, :show]
+    resources :products, except: [:edit, :update, :show]
   end
-
-
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
@@ -28,6 +27,8 @@
 
   get '/users' => 'users#new'
   post '/users' => 'users#create'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
