@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Jungle thanks you for your purchase! <%= @order.id %></h1>
+    <h3> Hello,</h3>
+    <p>
+      Thank you for shopping at Jungle, your items are listed below!
+    </p>
+    <p>
+      Order details.
+    </p>
+    <%= render /orders/item %>
+  </body>
+</html>
