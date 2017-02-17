@@ -21,7 +21,7 @@
           <dt>Price:</dt>
           <dd>$<%= @product.price %></dd>
           <dt>Average Rating:</dt>
-          <dd><%= @product.average_rating.to_i %> (<strong>Total Ratings:</strong> <%= @product.reviews.count %>)</dd>
+          <dd><%= @product.average_rating.to_i %>
         </dl>
       </div>
     </div>
@@ -45,7 +45,7 @@
                 <% @product.reviews.each do |r| %>
                   <li class="list-group-item">
                     <h4><strong><%= r.user.name %>:</strong></h4>
-                      <small><strong>Rated this product: </strong><%= r.rating %> </small>
+                      <small><strong>Rated this product: </strong><%= r.rating %>/5 </small>
                           <br>
                           <p>
                             <%= r.description %>

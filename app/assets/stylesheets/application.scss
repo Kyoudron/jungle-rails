@@ -29,14 +29,17 @@ input, button, select, textarea {
     display: block;
 }
 
+.panel-body {
+padding: 0;
+}
 .panel-info {
-    color: #286090;
+    color: black;
     background-color: #EEE;
     border-color: black;
 }
 
 .panel-info > .panel-heading {
-    color: #286090;
+    color: black;
     background-color: #EEE;
     border-color: black;
 }
