@@ -1,3 +1,4 @@
+<% if cart.any? %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -49,5 +50,11 @@
       <% end %>
     </div>
   </div>
-
 </section>
+<% else %>
+  <div class="text-center container">
+    <h1><a href="/">Back to home page</a> </h1>
+    <h3> Sorry! </h3>
+    <h4> Your Cart Cannot Be Empty </h4>
+  </div>
+<% end %>
