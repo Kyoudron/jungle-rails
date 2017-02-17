@@ -22,43 +22,6 @@ body {
   background-color: white;
 }
 
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    display: block;
-}
-
-.panel-body {
-padding: 0;
-}
-.panel-info {
-    color: black;
-    background-color: #EEE;
-    border-color: black;
-}
-
-.panel-info > .panel-heading {
-    color: black;
-    background-color: #EEE;
-    border-color: black;
-}
-
-.panel-primary > .panel-heading {
-    color: black;
-    background-color: #EEE;
-    border-color: black;
-}
-
-  .btnreview {
-      color: #fff;
-      background-color: #337ab7;
-      border-color: #2e6da4;
-      display: inherit;
-      margin-bottom: 1em;
-      margin-left: 1em;
-  }
-
   div.stars {
     width: 270px;
     display: inline-block;
