@@ -1,6 +1,4 @@
 class Review < ActiveRecord::Base
-
-  class Review < ActiveRecord::Base
   belongs_to :user
   belongs_to :product
 
@@ -10,4 +8,3 @@ class Review < ActiveRecord::Base
   validates :rating, presence: true
 
 end
-

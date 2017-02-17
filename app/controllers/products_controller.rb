@@ -4,8 +4,10 @@ class ProductsController < ApplicationController
     @products = Product.all.order(created_at: :desc)
   end
 
-  def show
+   def show
     @product = Product.find params[:id]
+    @review = Review.new
+    @review.user = current_user
   end
 
 end

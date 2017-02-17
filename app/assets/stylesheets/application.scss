@@ -28,3 +28,15 @@ input, button, select, textarea {
     line-height: inherit;
     display: block;
 }
+
+.panel-info {
+    color: #286090;
+    background-color: #EEE;
+    border-color: black;
+}
+
+.panel-info > .panel-heading {
+    color: #286090;
+    background-color: #EEE;
+    border-color: black;
+}
