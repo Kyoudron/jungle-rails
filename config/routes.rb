@@ -3,7 +3,7 @@
   root to: 'products#index'
 
   resources :products, only: [:index, :show] do
-    resources :reviews, only: [:create] #add delete?
+    resources :reviews, only: [:create, :destroy]
   end
   resources :categories, only: [:show]
 
@@ -23,7 +23,6 @@
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
 
   get '/users' => 'users#new'
   post '/users' => 'users#create'
