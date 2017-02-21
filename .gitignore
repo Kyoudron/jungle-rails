@@ -12,9 +12,6 @@
 # Ignore carrier wave uploads for development
 /public/uploads
 
-# Ignore db creds / settings
-/config/database.yml
-
 *.rbc
 capybara-*.html
 .rspec
